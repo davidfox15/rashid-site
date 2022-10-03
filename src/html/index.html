@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,16 +8,7 @@
     <title>Rashid</title>
   </head>
   <body>
-    <header class="Header">
-      <ul class="Navigation">
-        <li class="Navigation-Item"><a href="#" class="Navigation-Link">Главная</a></li>
-        <li class="Navigation-Item"><a href="#" class="Navigation-Link">Наши работы</a></li>
-        <li class="Navigation-Item"><a href="#" class="Navigation-Link">Каталог работ</a></li>
-        <li class="Navigation-Item"><a href="#" class="Navigation-Link">Контакты</a></li>
-        <li class="Navigation-Item"><a href="#" class="Navigation-Link">O нас</a></li>
-      </ul>
-      <h4 class="Header-Title">Рашид корпарейшен</h4>
-    </header>
+    @@include('./chunk/header.html')
     <div class="PostList">
       <div class="Post">
         <img src="./pic/pic1.jpeg" alt="стройка" class="Post-Img" />
@@ -55,13 +46,6 @@
         </div>
       </div>
     </div>
-    <footer>
-      <ul class="FooterInfo">
-        <li class="FooterInfo-Item">Телефон: +7(952)967-37-74</li>
-        <li class="FooterInfo-Item">E-mail: Abasov.rash98@yandex.ru</li>
-        <li class="FooterInfo-Item">ИП Абасов Р.А.</li>
-      </ul>
-    </footer>
-    <div></div>
+    @@include('./chunk/footer.html')
   </body>
 </html>
