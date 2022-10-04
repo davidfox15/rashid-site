@@ -9,9 +9,9 @@ const html = () => {
   return gulp
     .src('./src/html/*.html')
     .pipe(fileInclude())
-    .pipe(size({ title: 'До сжатия' }))
-    .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(size({ title: 'После сжатия' }))
+    // .pipe(size({ title: 'До сжатия' }))
+    // .pipe(htmlmin({ collapseWhitespace: true }))
+    // .pipe(size({ title: 'После сжатия' }))
     .pipe(gulp.dest('./public'));
 };
 
