@@ -11,8 +11,8 @@ body
 
 .Header
   width: 100%
-  display: flex
-  flex-direction: row
+  // display: flex
+  // flex-direction: row
   align-items: center
   /* justify-content: space-between; */
   padding: 10px
@@ -52,22 +52,35 @@ body
   flex-wrap: wrap
   justify-content: flex-start
   align-items: center
-  margin: 5px 0
+  gap: 20px
+  margin: 20px
 
 .Post
   border-radius: 10px
-  background-color: aqua
-  flex: 49%
-  margin: 5px
+  background-color: rgb(0, 173, 226)
+  flex: calc( 100%/2 - 20px)
+  // margin: 5px
+  &_FullLinne
+    flex: 100%
+  &_NoBorder
+    border-radius: 0px
 
   &-Img
     border-radius: 10px 10px 0px 0px
     width: 100%
-    height: 400px
+    height: 50vh
     object-fit: cover
+    &_NoBorder
+      border-radius: 0px
+    &_50
+      width: 50%
 
   &-Text
+    font-size: 1.4rem
     padding: 25px 15px
+
+.TwoImg
+  display: flex
 
 footer
   text-align: center
@@ -75,8 +88,36 @@ footer
   background-color: rgb(0, 131, 171)
 
 .FooterInfo
-
   &-Item
     color: rgb(233, 233, 233)
     margin: 10px
     text-decoration: none
+
+.about-text
+  font-style: italic
+  font-size: 1.1rem
+  padding: 20px
+
+.about-container
+  margin: 20px
+  padding: 10px
+  border: 4px solid white
+  border-radius: 5px
+  &__list
+    padding: 10px 0
+    list-style-position: inside
+    & li
+      font-family: 'Raleway', sans-serif
+    & li::marker
+      color: white
+
+.about-title
+  text-align: center
+  padding: 10px
+
+.about-contact
+  display: flex
+  flex-direction: row
+  align-items: center
+  gap: 10px
+  margin: 10px 0

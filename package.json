@@ -17,5 +17,8 @@
     "gulp-sass": "^5.1.0",
     "gulp-size": "^4.0.1",
     "sass": "^1.55.0"
+  },
+  "dependencies": {
+    "gulp-cli": "^2.3.0"
   }
 }
