@@ -12,6 +12,6 @@ const watcher = () => {
   browserSync.watch('./src/pic/**/*.*', moveFiles).on('change', browserSync.reload);
 };
 
-exports.dev = series(clear, html, buildStyles, moveFiles, parallel(server, watcher));
+exports.dev = series(clear, html, buildStyles, moveFiles, parallel(server, watcher), clear);
 
 // exports.default = defaultTask;
